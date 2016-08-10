@@ -1,0 +1,30 @@
+{
+  "name": "ng2-custom-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "npm run clean && tsc -p src && cp src/*.html src/*.ico lib/"
+  },
+  "author": "",
+  "license": "ISC",
+  "typings": "lib/index.d.ts",
+  "devDependencies": {
+    "@angular/common": "2.0.0-rc.4",
+    "@angular/compiler": "2.0.0-rc.4",
+    "@angular/core": "2.0.0-rc.4",
+    "@angular/platform-browser": "2.0.0-rc.4",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.4",
+    "@types/lodash": "^4.14.30",
+    "@types/node": "^6.0.32",
+    "codelyzer": "0.0.26",
+    "rxjs": "^5.0.0-beta.6",
+    "tslint": "^3.14.0",
+    "typescript": "^2.1.0-dev.20160809"
+  },
+  "peerDependencies": {
+    "@angular/core": "^2.0.0-rc.4",
+    "rxjs": "^5.0.0-beta.6"
+  }
+}
